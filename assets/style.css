@@ -128,7 +128,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
       width: 100%;
     }   
 
-    .text-percent.column {
+    .text-percent {
         width: auto;
         margin-left: 2%;
       }   
@@ -160,13 +160,13 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
       font-weight: 300;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 7rem;
       line-height: 1.2;
       letter-spacing: -.1rem;
       margin-bottom: 2rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 4rem;
       line-height: 1.25;
       letter-spacing: -.1rem;
       margin-bottom: 1.8rem;
@@ -211,9 +211,9 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     }
     /* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
     a {
-      color: #1EAEDB;
-      text-decoration: underline;
+    color: #0f0f0f;
       cursor: pointer;
+      font-family: "OpenSans"
     }
     a:hover {
       color: #0FA0CE;
@@ -527,18 +527,10 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     p {
       font-family: "OpenSans";
       font-weight: 400;
-      font-size: 14px;
+      font-size: 20px;
       padding-left: 12px;
     }
    
-    p.figure_numbers {
-      font-size : 13px;
-      font-family :"OpenSans";
-      padding-left: 0px;
-      font-weight: 500;
-      margin-top: 0;
-   
-    }
     .navbar {
         border-bottom: solid 1px;
     }
@@ -587,8 +579,8 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     }
 
     .title-block{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 25%;
+        padding-right: 25%;
         position: absolute;
 
     }
@@ -713,6 +705,56 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
       h1, h2, h3, p {
           text-align: center;
      }
+
+     p {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: 14px;
+        padding-left: 12px;
+      }
+
+     h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        letter-spacing: -.1rem;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+        letter-spacing: -.1rem;
+        margin-bottom: 1.8rem;
+        margin-top: 1.8rem;
+      }
+      h3 {
+        font-size: 3.0rem;
+        line-height: 1.3;
+        letter-spacing: -.1rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      h4 {
+        font-size: 2.6rem;
+        line-height: 1.35;
+        letter-spacing: -.08rem;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+      }
+      h5 {
+        font-size: 2.2rem;
+        line-height: 1.5;
+        letter-spacing: -.05rem;
+        margin-bottom: 0.6rem;
+        margin-top: 0.6rem;
+      }
+      h6 {
+        font-size: 2.0rem;
+        line-height: 1.6;
+        letter-spacing: 0;
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+      }
+      
       body {
           display: block;
           margin: 0px;

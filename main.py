@@ -14,4 +14,4 @@ if __name__  == "__main__":
     computation_thread.start()
 
     app.title = "Employ Konrad"
-    app.run_server()
+    app.run_server(host  = '192.168.68.101') 
