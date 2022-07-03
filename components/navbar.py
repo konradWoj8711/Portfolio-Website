@@ -6,5 +6,25 @@ from dash import dcc
 from dash import html
 
 layout = html.Div(
-    html.P("Hello")
+    className = "row navbar",
+    children = [
+
+        html.Div(
+            className = 'row navbar-content',
+            style = {'max-width':'800px'},
+            children = [
+                html.A(                    
+                    html.Img(
+                        src = app.get_asset_url("logo.svg")
+                    ),
+                    href = '/',
+                    className= "ten-percent column"
+                ),
+                html.P("Work", className='text-percent column'),
+                html.P("About", className='text-percent column'),
+                html.P("Contact", className='text-percent column'),
+
+            ]
+        )
+    ]
 )
