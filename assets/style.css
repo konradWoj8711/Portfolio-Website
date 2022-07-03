@@ -49,7 +49,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
           width: 100%;
      }
    
-      .page-height {
+    .page-height {
         height: 100vh;
      }
      .floating.div{
@@ -152,6 +152,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
       color: rgb(50, 50, 50);
     }
     
+    
     /* Typography –––––––––––––––––––––––––––––––––––––––––––––––––– */
     h1, h2, h3, h4, h5, h6 {
       margin-top: 0;
@@ -159,13 +160,13 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
       font-weight: 300;
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: 3rem;
       line-height: 1.2;
       letter-spacing: -.1rem;
       margin-bottom: 2rem;
     }
     h2 {
-      font-size: 3.6rem;
+      font-size: 2rem;
       line-height: 1.25;
       letter-spacing: -.1rem;
       margin-bottom: 1.8rem;
@@ -522,10 +523,6 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     
     h1, h2, h3, h4, h5 {
       font-family: "OpenSans";
-      letter-spacing: 2.1px;
-      font-size: 21px;
-      padding-left: 12px;
-      font-weight: bold;
     }
     p {
       font-family: "OpenSans";
@@ -552,6 +549,47 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
         padding-right : 15%;
         display: flex;
         justify-content: space-between;
+        padding-top : .5rem;
+        padding-bottom : .5rem;
+
+    }
+
+    .banner-background{
+        position: absolute;
+        z-index: -100;
+        object-fit: cover;
+        width: 100%;
+
+    }
+
+    .banner-bg{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .hero:after{
+        background-color: #ffffff;
+        height: 100vh;
+        content: ' ';
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        right: 0;
+        transform: skewY(-3deg);
+        transform-origin: top left;
+    }
+    .particle-js{
+        top:0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .title-block{
+        padding-left: 20%;
+        padding-right: 20%;
+        position: absolute;
 
     }
    
@@ -696,7 +734,15 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
         margin: 0px;
       
       }
+
+      .title-block{
+        padding-left: 10%;
+        padding-right: 10%;
+        position: absolute;
+
     }
+    }
+
     
     /* width */
     ::-webkit-scrollbar {
